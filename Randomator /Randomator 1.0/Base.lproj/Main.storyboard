@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Randomator_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-If-CXV">
+                                <rect key="frame" x="85" y="257" width="130" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-x5-FOB">
+                                <rect key="frame" x="200" y="257" width="130" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randomizer v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXF-yX-2K5">
+                                <rect key="frame" x="77" y="92" width="674" height="371.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d39-dn-LoK">
+                                <rect key="frame" x="154" y="693" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enjoy It!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-Cy-v21">
+                                <rect key="frame" x="146" y="822" width="123" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-pO-zIW">
+                                <rect key="frame" x="116" y="539" width="602" height="379.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Randomize!" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.32002351721938777" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RandomizeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iby-JY-teG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Рамка" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-fC-6EG">
+                                <rect key="frame" x="77" y="213" width="681" height="641"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is my first ever app, I made simple number randomizer. Its &quot;randomize-radius&quot; is 0-100." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR6-F8-mYC">
+                                <rect key="frame" x="43" y="727" width="329" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Td8-fC-6EG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.344866" id="4G1-R8-toL"/>
+                            <constraint firstItem="eXF-yX-2K5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="127:448" id="4VS-Ux-VnA"/>
+                            <constraint firstItem="Td8-fC-6EG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="261:896" id="8te-ty-el9"/>
+                            <constraint firstItem="eXF-yX-2K5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.613527" id="98X-yw-YOo"/>
+                            <constraint firstItem="Td8-fC-6EG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Atn-7t-hNO"/>
+                            <constraint firstItem="tI8-pO-zIW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="515" id="IcU-m3-Zmk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eXF-yX-2K5" secondAttribute="bottom" constant="710.5" id="KWk-hc-0fp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eXF-yX-2K5" secondAttribute="trailing" constant="83" id="LbG-qW-JMl"/>
+                            <constraint firstItem="tI8-pO-zIW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="RhQ-5n-DJH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Td8-fC-6EG" secondAttribute="trailing" constant="76" id="Ruz-b3-j9P"/>
+                            <constraint firstItem="eXF-yX-2K5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0440848" id="VXT-EY-Bkx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tI8-pO-zIW" secondAttribute="trailing" constant="116" id="WRM-my-zsX"/>
+                            <constraint firstItem="eXF-yX-2K5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="cCP-b1-8rv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Td8-fC-6EG" secondAttribute="bottom" constant="320" id="eSn-to-obF"/>
+                            <constraint firstItem="eXF-yX-2K5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="kgo-Gn-pHM"/>
+                            <constraint firstItem="Td8-fC-6EG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.630435" id="mSN-d1-DuX"/>
+                            <constraint firstItem="Td8-fC-6EG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="sl0-1T-xE6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tI8-pO-zIW" secondAttribute="bottom" constant="255.5" id="zFR-cw-Xz6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RandomImage" destination="4cC-If-CXV" id="BPR-AT-0qY"/>
+                        <outlet property="RandomImage2" destination="aZ8-x5-FOB" id="9zZ-ag-QFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Рамка" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
